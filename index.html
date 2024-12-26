@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="poem.css" />
@@ -16,7 +18,7 @@
     
     <main>
        <form id="poem-generator">
-        <input type="text" placeholder="Enter the topic of the Poem" id="topic" class="topic"autofocus required autocomplete="off"/>
+        <input type="text" placeholder="Enter the topic of the Poem" id="topic" class="topic" autofocus required autocomplete="off"/>
         <input type="submit" value="submit" id="submit" class="submit">
        </form> 
        <div class="poem" id ="poem">
