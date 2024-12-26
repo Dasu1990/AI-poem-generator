@@ -7,10 +7,14 @@ function display(response) {
         cursor: null,
         delay: 20,
     });
+
 }
 function generate(event) {
     event.preventDefault();
-    let topic= document.querySelector("#topic")
+    let topic= document.querySelector("#topic");
+    let hidden = document.querySelector("#poem");
+    hidden.classList.remove("hidden");
+    hidden.innerHTML = `<span class="blink">Generating a poem about ${topic.value}</span>`;
   let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
   let context =
     "Your are a good AI Assistant that writes short and sweet poem. The poem must be provided in HTML format. Example: <p>this is a poem</p> make sure to follow user instraction";

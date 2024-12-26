@@ -13,6 +13,7 @@ h1{
 .container{
 margin: 120px auto;
 max-width: 600px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 header{
     margin-bottom: 30px;
@@ -58,4 +59,24 @@ footer{
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
+}
+.hidden{
+    display:none;
+} 
+.blink {
+    animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1.0;
+    }
 }
